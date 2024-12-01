@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Vocabulary Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Arabic Vocabulary</h1>
+        <p class="subtitle">Learn Arabic words, plurals, opposites, and more!</p>
+
+        <div class="search-box">
+            <select id="wordSelect">
+                <option value="">Select an Arabic Word</option>
+                <option value="كتاب">كتاب</option>
+                <option value="قلم">قلم</option>
+                <option value="بيت">بيت</option>
+                <option value="مدرسة">مدرسة</option>
+            </select>
+            <button class="button" onclick="selectWord()">Show Details</button>
+        </div>
+
+        <p>Or search for a word:</p>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Type an Arabic word..." />
+            <button class="button" onclick="searchWord()">Search</button>
+        </div>
+
+        <div id="output" class="output"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
